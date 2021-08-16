@@ -3,6 +3,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express()
 const port = 3000
+
+// HOST = 'sql6.freemysqlhosting.net'
+// USER = 'sql6431033'
+// PASSWORD = 'bIrUgV4Mhk'
+// DATABASE = 'sql6431033'
 var mysql = require('mysql')
 var connection = mysql.createConnection({
     host: process.env.HOST,
